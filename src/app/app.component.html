@@ -9,9 +9,9 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
   }
+  a { padding: 10px;}
 </style>
-
-<div class="content" role="main">
-  <h1>Welcome to {{title}}!</h1>
-  <h2>Start editing to see some magic happen</h2>
-</div>
+<div>Version 0.3</div>
+<a [routerLink]="['compra']">Compra</a>
+<a [routerLink]="['menu']">Menu</a>
+<router-outlet></router-outlet>

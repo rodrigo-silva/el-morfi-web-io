@@ -1,0 +1,21 @@
+<table>
+  <thead>
+      <tr>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+          <th>Domingo</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let semana of [0,1,2,3]">
+      <td *ngFor="let dia of [0,2,4,6,8,10,12]">
+        <div>{{ menu[dia+(14*semana)].nombre }}</div>
+        <div>{{ menu[dia+(14*semana)+1].nombre }}</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
